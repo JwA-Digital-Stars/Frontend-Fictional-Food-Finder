@@ -1,0 +1,33 @@
+h2{
+    text-align: center;
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: auto;
+    max-width: 1500;
+
+    color: darkorange;
+}
+
+a{
+    background-color: darkblue;
+    border-radius: 3px;
+    padding: 1rem;
+    color: darkorange;
+    text-align: center;
+    font-size:x-large;
+
+    order: 0;
+    flex: auto;
+    align-self: auto;
+    
+}
+
+a:hover{
+    background-color: rgb(0, 38, 255);
+}
