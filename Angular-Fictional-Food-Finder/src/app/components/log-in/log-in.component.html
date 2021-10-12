@@ -1,0 +1,19 @@
+<div id = "login">
+                
+    <input type="text" placeholder="Email" name="Email" required>
+    <input type="text" placeholder="password" name="password" required>
+
+    <label>Select Customer or Food Truck Owner:</label>
+    <select name = "login_selection" id= "selection">
+        <option>Customer</option>
+        <option>Owner</option>
+    </select>
+
+    <input type = "submit" value="Login">
+
+</div>
+
+<a routerLink="/dashboard">Customer home</a>
+<a routerLink="/ownerDashboard">Owner home</a>
+<a routerLink="/registerCustomer">Sign up as a Customer</a>
+<a routerLink="/registerOwner">Sign up as a Food truck owner</a>
