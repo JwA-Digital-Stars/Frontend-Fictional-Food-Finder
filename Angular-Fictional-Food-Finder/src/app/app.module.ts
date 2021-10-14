@@ -10,6 +10,8 @@ import { LogInComponent } from './components/log-in/log-in.component';
 import { DashboardOwnerComponent } from './components/dashboard-owner/dashboard-owner.component';
 import { RegisterCustomerComponent } from './components/register-customer/register-customer.component';
 import { RegisterOwnerComponent } from './components/register-owner/register-owner.component';
+import { UpdateMenuComponent } from './components/update-menu/update-menu.component';
+import { TruckDetailsComponent } from './components/truck-details/truck-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { RegisterOwnerComponent } from './components/register-owner/register-own
     LogInComponent,
     DashboardOwnerComponent,
     RegisterCustomerComponent,
-    RegisterOwnerComponent
+    RegisterOwnerComponent,
+    UpdateMenuComponent,
+    TruckDetailsComponent
   ],
   imports: [
     BrowserModule,

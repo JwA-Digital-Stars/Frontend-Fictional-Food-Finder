@@ -1,0 +1,54 @@
+h2{
+    text-align: center;
+    color: rgb(117, 136, 243);
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    
+    
+}
+
+.dashboard{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    text-align: center;
+
+    padding: 0;
+    
+    max-width: 1500;
+
+    color: darkorange;
+    
+    
+}
+
+a{
+    background-color: darkblue;
+    color: darkorange;
+    text-align: center;
+    font-size:x-large;
+  
+    border-radius: 3px;
+    padding: 1rem;
+    
+    
+    margin-left: 3rem;
+    margin-right: 3rem;
+    
+    
+    box-sizing: border-box;
+  
+    /* flexbox */
+    order: 0;
+    flex: auto;
+    
+    
+    
+}
+
+a:hover{
+    background-color: rgb(0, 38, 255);
+}
+

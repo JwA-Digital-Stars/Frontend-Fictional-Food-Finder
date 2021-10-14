@@ -7,6 +7,8 @@ import { LogInComponent } from './components/log-in/log-in.component';
 import { DashboardOwnerComponent } from './components/dashboard-owner/dashboard-owner.component';
 import { RegisterCustomerComponent } from './components/register-customer/register-customer.component';
 import { RegisterOwnerComponent } from './components/register-owner/register-owner.component';
+import { UpdateMenuComponent } from './components/update-menu/update-menu.component';
+import { TruckDetailsComponent } from './components/truck-details/truck-details.component';
 
 
 const routes: Routes = [
@@ -26,7 +28,11 @@ const routes: Routes = [
   //register for customer
   {path: 'registerCustomer', component:RegisterCustomerComponent},
   //register for owner
-  {path: 'registerOwner', component:RegisterOwnerComponent}
+  {path: 'registerOwner', component:RegisterOwnerComponent},
+  //owner update food truck menu
+  {path: 'UpdateMenu', component: UpdateMenuComponent},
+  //detail for trucks *needs the detail/:truckname added
+  {path: 'detail', component: TruckDetailsComponent}
 
 
 ];

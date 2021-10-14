@@ -1,7 +1,7 @@
 export class Item{
     
-    constructor(public name:string , public truckId:string){
+    constructor(public name:string , public cost:number){
         this.name = name;
-        this.truckId = truckId;
+        this.cost = cost;
     }
 }

@@ -1,0 +1,20 @@
+table,th{
+    width: auto;
+    border: 3px solid orangered;
+    background-color: white;
+    
+}
+
+td{
+    width: auto;
+    border: 3px solid slateblue;
+}
+
+body{
+    background-color: rgba(219, 235, 245, 0.89);
+    
+}
+
+
+
+
