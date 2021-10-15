@@ -1,7 +1,7 @@
 <div id = "login">
                 
-    <input type="text" placeholder="Email" name="Email" required>
-    <input type="text" placeholder="password" name="password" required>
+    <input type="text" placeholder="Email" name="Email" #customerEmail id="emailInput"required />
+    <input type="text" placeholder="password" name="password" #customerPassword id="passwordInput" required/>
 
     <label>Select Customer or Food Truck Owner:</label>
     <select name = "login_selection" id= "selection">
@@ -9,7 +9,7 @@
         <option>Owner</option>
     </select>
 
-    <input type = "submit" value="Login">
+   <button class="login_button" (click)="login(customerEmail.value , customerPassword.value);">Login</button>
 
 </div>
 
