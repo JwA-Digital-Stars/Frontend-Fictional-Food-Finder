@@ -12,6 +12,7 @@ import { RegisterCustomerComponent } from './components/register-customer/regist
 import { RegisterOwnerComponent } from './components/register-owner/register-owner.component';
 import { UpdateMenuComponent } from './components/update-menu/update-menu.component';
 import { TruckDetailsComponent } from './components/truck-details/truck-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,12 +25,14 @@ import { TruckDetailsComponent } from './components/truck-details/truck-details.
     RegisterCustomerComponent,
     RegisterOwnerComponent,
     UpdateMenuComponent,
-    TruckDetailsComponent
+    TruckDetailsComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

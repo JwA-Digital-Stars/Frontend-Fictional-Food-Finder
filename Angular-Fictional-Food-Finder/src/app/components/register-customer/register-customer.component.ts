@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Customer } from 'src/app/models/Customer';
+import { Truck } from 'src/app/models/Truck';
+import { CustomerRegisterService } from 'src/app/services/customer-register.service';
 
 @Component({
   selector: 'app-register-customer',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegisterCustomerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private CustomerRegisterService:CustomerRegisterService) { }
 
   ngOnInit(): void {
+  }
+
+  //favoritesEmpty: Truck[] = [];
+
+  registerCustomer(email:string, password:string, name:string): void{
+    
+    //this.CustomerRegisterService.register({email,password,name, favoritesEmpty} as Customer).subscribe();
   }
 
 }

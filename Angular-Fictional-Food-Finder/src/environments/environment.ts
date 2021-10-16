@@ -3,8 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  register: 'http://localhost:8000/register',
+  getAllTrucks:'http://localhost:8000/truck/all',
+  ownerlogin: 'http://localhost:8000/'
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
