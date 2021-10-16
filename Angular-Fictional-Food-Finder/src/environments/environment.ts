@@ -4,9 +4,10 @@
 
 export const environment = {
   production: false,
-  register: 'http://localhost:8000/register',
-  getAllTrucks:'http://localhost:8000/truck/all',
-  ownerlogin: 'http://localhost:8000/'
+  register: 'http://localhost:8080/register',
+  getAllTrucks:'http://localhost:8080/truck/all',
+  ownerlogin: 'http://localhost:8080/',
+  createTruck: 'http://localhost:8080/truck/create',
 };
 
 

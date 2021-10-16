@@ -13,11 +13,7 @@ export class TruckService {
 
   constructor( private http: HttpClient,) { }
 
-  private allTrucksUrl = 'http://localhost:8080/truck/all';
 
-  //httpOptions = {
-   // headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-  //};
 
   getAllTrucks(): Observable<Truck[]>{
     return this.http.get(environment.getAllTrucks) as Observable<Truck[]>;
