@@ -6,8 +6,9 @@ export const environment = {
   production: false,
   register: 'http://localhost:8080/register',
   getAllTrucks:'http://localhost:8080/truck/all',
-  ownerlogin: 'http://localhost:8080/',
+  ownerlogin: 'http://localhost:8080/owner/login',
   createTruck: 'http://localhost:8080/truck/create',
+  customerlogin: 'http://localhost:8080/customer/login',
 };
 
 

@@ -1,16 +1,16 @@
 <div id = "login">
-                
+    <form>          
     <input type="text" placeholder="Email" name="Email" #customerEmail id="emailInput"required />
     <input type="text" placeholder="password" name="password" #customerPassword id="passwordInput" required/>
 
     <label>Select Customer or Food Truck Owner:</label>
-    <select name = "login_selection" id= "selection">
-        <option>Customer</option>
-        <option>Owner</option>
+    <select name = "login_selection" id= "selection" >
+        <option value="customer" #customerSelect>Customer</option>
+        <option value="owner" #ownerSelect>Owner</option>
     </select>
     
-   <button class="login_button" (click)="login(customerEmail.value , customerPassword.value);">Login</button>
-
+   <button class="login_button" (click)="login(customerEmail.value , customerPassword.value, selection.value);">Login</button>
+</form>
 </div>
 
 <a routerLink="/dashboard">Customer home</a>

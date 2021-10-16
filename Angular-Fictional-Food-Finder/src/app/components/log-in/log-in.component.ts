@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from 'src/app/services/login.service';
 import { Customer } from 'src/app/models/Customer';
+import { TruckOwner } from 'src/app/models/TruckOwner';
 
 @Component({
   selector: 'app-log-in',
@@ -14,8 +15,18 @@ export class LogInComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  login(email:string, password:string): void{
+
+
+  login(email:string, password:string, selection:string): void{
+    
     if(!email){return;}
-    this.loginService.verifyLogin({email,password} as Customer).subscribe();
+
+    if(selection === 'customer'){
+    this.loginService.verifyLoginCustomer({email,password} as Customer).subscribe();
+    }
+
+    if(selection === 'owner'){
+      this.loginService.verifyLoginOwner({email,password} as TruckOwner).subscribe();
+      }
   }
 }
