@@ -30,6 +30,6 @@
        
             <!--(click)= "registerTruck(tName.value);"-->
         <hr>
-        <button type = submit class="registerBtn" (click) = " registerOwner(oEmail.value,oPassword.value,oName.value);  registerTruck(tName.value); " >Register</button>
+        <button type = submit class="registerBtn" (click) = " registerOwner(oEmail.value,oPassword.value,oName.value);  registerTruck(tName.value , oEmail.value); " ><a routerLink="/ownerDashboard">Register</a></button>
     </div>
 </form>
