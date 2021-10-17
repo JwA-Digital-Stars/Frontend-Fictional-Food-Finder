@@ -14,7 +14,7 @@
     
         <label><b>Name</b></label>
         <input type = "text" #oName placeholder="Enter Name" id="name" required>
-    
+        <button type = submit class="registerBtn" (click) = " registerOwner(oEmail.value,oPassword.value,oName.value); " >Submit</button>
         
     
     </div>
@@ -30,6 +30,6 @@
        
             <!--(click)= "registerTruck(tName.value);"-->
         <hr>
-        <button type = submit class="registerBtn" (click) = " registerOwner(oEmail.value,oPassword.value,oName.value);  registerTruck(tName.value , oEmail.value); " ><a routerLink="/ownerDashboard">Register</a></button>
+        <button type = submit class="registerBtn" (click) = "registerTruck(tName.value , oEmail.value); " ><a routerLink="/ownerDashboard">Register</a></button>
     </div>
 </form>

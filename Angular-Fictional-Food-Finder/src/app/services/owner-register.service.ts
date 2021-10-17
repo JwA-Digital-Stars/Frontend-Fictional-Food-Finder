@@ -17,6 +17,6 @@ export class OwnerRegisterService {
   }
 
   registerTruck(name:string , email:string){
-    return this.http.post<TruckPost>(environment.createTruck, {name,email});
+    return this.http.post(environment.createTruck, {name,email});
   }
 }

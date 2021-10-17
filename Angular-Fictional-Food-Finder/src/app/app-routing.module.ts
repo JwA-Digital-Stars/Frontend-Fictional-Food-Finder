@@ -32,7 +32,11 @@ const routes: Routes = [
   //owner update food truck menu
   {path: 'UpdateMenu', component: UpdateMenuComponent},
   //detail for trucks *needs the detail/:truckname added
-  {path: 'detail', component: TruckDetailsComponent}
+  {path: 'detail/:name', component: TruckDetailsComponent},
+  //owner specific dashboard
+  {path: 'ownerDashboard/:email', component: DashboardOwnerComponent},
+  //customer specific dashboard
+  {path: 'customerDashboard/:email', component: DashboardComponent}
 
 
 ];
