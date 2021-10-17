@@ -20,14 +20,14 @@ export class LoginService {
 
   constructor(private http:HttpClient) { }
 
-  verifyLoginOwner(owner:TruckOwner){
+  verifyLoginOwner(email:string , password:string){
     
-    return this.http.post<TruckOwner>(this.ownerloginUrl, owner, this.httpOptions);
+    return this.http.post(this.ownerloginUrl, {email,password}, this.httpOptions);
   }
 
-  verifyLoginCustomer(customer:Customer){
+  verifyLoginCustomer(email:string , password:string){
     
-    return this.http.post<Customer>(this.customerloginUrl, customer, this.httpOptions);
+    return this.http.post(this.customerloginUrl, {email,password}, this.httpOptions);
   }
 
 }

@@ -15,11 +15,11 @@ export class RegisterCustomerComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  //favoritesEmpty: Truck[] = [];
+  
 
   registerCustomer(email:string, password:string, name:string): void{
     
-    //this.CustomerRegisterService.register({email,password,name, favoritesEmpty} as Customer).subscribe();
+    this.CustomerRegisterService.register({email,password,name} as Customer).subscribe();
   }
 
 }

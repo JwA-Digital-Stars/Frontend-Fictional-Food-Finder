@@ -22,11 +22,11 @@ export class LogInComponent implements OnInit {
     if(!email){return;}
 
     if(selection === 'customer'){
-    this.loginService.verifyLoginCustomer({email,password} as Customer).subscribe();
+    this.loginService.verifyLoginCustomer(email,password).subscribe();
     }
 
     if(selection === 'owner'){
-      this.loginService.verifyLoginOwner({email,password} as TruckOwner).subscribe();
+      this.loginService.verifyLoginOwner(email,password).subscribe();
       }
   }
 }

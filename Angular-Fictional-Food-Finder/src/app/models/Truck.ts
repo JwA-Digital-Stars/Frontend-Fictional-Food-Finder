@@ -3,10 +3,9 @@ import { TruckOwner } from "./TruckOwner";
 
 export class Truck{
 
-    constructor(public name:string, public hours:string, public owner:TruckOwner){
+    constructor(public name:string){
             this.name = name;
-            this.hours = hours;
-            this.owner = owner;
+            
     }
 
 
