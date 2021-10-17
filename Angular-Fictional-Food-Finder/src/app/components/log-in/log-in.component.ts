@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { LoginService } from 'src/app/services/login.service';
 import { Customer } from 'src/app/models/Customer';
 import { TruckOwner } from 'src/app/models/TruckOwner';
+import { CustomerLogin } from 'src/app/models/CustomerLogin';
+import { OwnerLogin } from 'src/app/models/OwnerLogin';
 
 @Component({
   selector: 'app-log-in',
@@ -22,11 +24,11 @@ export class LogInComponent implements OnInit {
     if(!email){return;}
 
     if(selection === 'customer'){
-    this.loginService.verifyLoginCustomer(email,password).subscribe();
+    this.loginService.verifyLoginCustomer({email,password} as CustomerLogin).subscribe();
     }
 
     if(selection === 'owner'){
-      this.loginService.verifyLoginOwner(email,password).subscribe();
+      this.loginService.verifyLoginOwner({email,password} as OwnerLogin).subscribe();
       }
   }
 }

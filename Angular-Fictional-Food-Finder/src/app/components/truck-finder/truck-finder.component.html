@@ -11,20 +11,22 @@
     <table>
         <tr>
             <th>Food Truck</th>
-            <th>Owner</th>
+            <th>Actions</th>
+            
             
         </tr>
 
         <tr>
             <td><a routerLink="/detail">Test Truck</a></td>
-            <td>Test owner</td>
+            <td><button>Add to Favorites</button></td> 
             
             
         </tr>
-        <!--*ngFor = let truck of trucks-->
+        <!--Iterating through all trucks-->
         <tr *ngFor = "let truck of trucks" >
-            <!--{{trucks.name}}-->
-            <td><a routerLink="/detail">{{truck.name}}</a></td>         
+           
+            <td><a routerLink="/detail">{{truck.name}}</a></td> 
+            <td><button (click) = "favoriteToggle()">Add to Favorites</button></td>        
         </tr>
     </table>
 </div>

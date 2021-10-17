@@ -9,15 +9,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class CustomerRegisterService {
 
-  private customerRegisterUrl ='http://localhost:8080/create'
-  
 
+  // can be used for 3rd parameter
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };  
   constructor(private http:HttpClient) { }
 
   register(customer : Customer){
-    return this.http.post<Customer>(this.customerRegisterUrl, customer, this.httpOptions);
+    return this.http.post<Customer>(environment.customerRegister, customer);
   }
 }

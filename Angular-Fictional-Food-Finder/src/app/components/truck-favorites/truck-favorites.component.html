@@ -5,15 +5,21 @@
     <table>
         <tr>
             <th>Food Truck</th>
-            <th>Hours</th>
+            
             
         </tr>
 
         <tr>
             <td><a routerLink="/detail">Test Truck</a></td>
-            <td>MWF</td>
-            
+
         </tr>
+
+        <!---iterating through favorite trucks-->
+        <tr *ngFor = "let truck of favoriteTrucks" >
+            
+            <td><a routerLink="/detail">{{truck.name}}</a></td>         
+        </tr>
+
     </table>
 </div>
 

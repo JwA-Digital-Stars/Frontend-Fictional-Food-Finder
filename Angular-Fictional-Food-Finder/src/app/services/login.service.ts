@@ -6,14 +6,15 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { TruckOwner } from '../models/TruckOwner';
 import { Truck } from '../models/Truck';
 import { environment } from 'src/environments/environment';
+import { OwnerLogin } from '../models/OwnerLogin';
+import { CustomerLogin } from '../models/CustomerLogin';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
 
-  private customerloginUrl ='http://localhost:8080/customer/login'
-  private ownerloginUrl ='http://localhost:8080/owner/login'
+
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -21,15 +22,15 @@ export class LoginService {
 
   constructor(private http:HttpClient) { }
 
-  verifyLoginOwner(email:string , password:string){
+  verifyLoginOwner(owner: OwnerLogin){
     
-    //return this.http.post(this.ownerloginUrl, {email,password}, this.httpOptions);
-    return this.http.post(environment.ownerlogin,{email,password});
+    
+    return this.http.post(environment.ownerlogin,owner);
   }
 
-  verifyLoginCustomer(email:string , password:string){
+  verifyLoginCustomer(customer: CustomerLogin){
     
-    return this.http.post(this.customerloginUrl, {email,password});
+    return this.http.post(environment.customerlogin, customer);
   }
 
 }

@@ -22,6 +22,8 @@ export class TruckFinderComponent implements OnInit {
     this.truckService.getAllTrucks().subscribe(trucks => this.trucks = trucks)
   }
 
+  favoriteToggle(){}
+
   goBack(){
     this._location.back();
   }
