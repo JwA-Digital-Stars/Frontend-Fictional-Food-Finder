@@ -5,6 +5,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { TruckOwner } from '../models/TruckOwner';
 import { Truck } from '../models/Truck';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -22,12 +23,13 @@ export class LoginService {
 
   verifyLoginOwner(email:string , password:string){
     
-    return this.http.post(this.ownerloginUrl, {email,password}, this.httpOptions);
+    //return this.http.post(this.ownerloginUrl, {email,password}, this.httpOptions);
+    return this.http.post(environment.ownerlogin,{email,password});
   }
 
   verifyLoginCustomer(email:string , password:string){
     
-    return this.http.post(this.customerloginUrl, {email,password}, this.httpOptions);
+    return this.http.post(this.customerloginUrl, {email,password});
   }
 
 }
