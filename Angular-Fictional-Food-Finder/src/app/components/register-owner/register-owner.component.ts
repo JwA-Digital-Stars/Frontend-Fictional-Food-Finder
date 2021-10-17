@@ -22,8 +22,8 @@ export class RegisterOwnerComponent implements OnInit {
     this.ownerRegisterService.register({email,password,name} as TruckOwner).subscribe();
   }
 
-  registerTruck(name:string , email:string): void{
-    this.ownerRegisterService.registerTruck(name,email).subscribe();
-  }
+
+
+  
 
 }

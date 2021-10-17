@@ -13,6 +13,7 @@ import { RegisterOwnerComponent } from './components/register-owner/register-own
 import { UpdateMenuComponent } from './components/update-menu/update-menu.component';
 import { TruckDetailsComponent } from './components/truck-details/truck-details.component';
 import { FormsModule } from '@angular/forms';
+import { RegisterTruckComponent } from './components/register-truck/register-truck.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     RegisterOwnerComponent,
     UpdateMenuComponent,
     TruckDetailsComponent,
+    RegisterTruckComponent,
     
   ],
   imports: [
