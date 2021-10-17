@@ -28,8 +28,8 @@
         <label><b>Food Truck name</b></label>
         <input type = "text" #tName placeholder="Enter Food Truck Name" id="foodTruckName" required>
        
-
+            <!--(click)= "registerTruck(tName.value);"-->
         <hr>
-        <button type = submit class="registerBtn" (click) = "registerOwner(oEmail.value,oPassword.value,oName.value); " (click)= "registerTruck(tName.value);">Register</button>
+        <button type = submit class="registerBtn" (click) = " registerOwner(oEmail.value,oPassword.value,oName.value);  registerTruck(tName.value); " >Register</button>
     </div>
 </form>
