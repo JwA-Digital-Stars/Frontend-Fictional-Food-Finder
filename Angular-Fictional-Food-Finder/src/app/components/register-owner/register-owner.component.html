@@ -1,35 +1,20 @@
+<form id="register_form">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill out this form</p>
+    <hr>
+
+    <label><b>Email</b></label>
+    <input type="text" #oEmail placeholder="Enter Email" id="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" #oPassword placeholder="Enter Password" id="password" required>
+
+    <label><b>Name</b></label>
+    <input type="text" #oName placeholder="Enter Name" id="name" required>
+    <a routerLink="/registertruck"> <button type=submit class="registerBtn" (click)=" registerOwner(oEmail.value,oPassword.value,oName.value); ">Submit</button></a>
 
 
-<form id= "register_form">
-    <div class = "container">
-        <h1>Register</h1>
-        <p>Please fill out this form</p>
-        <hr>
-    
-        <label><b>Email</b></label>
-        <input type = "text" #oEmail placeholder="Enter Email" id="email" required>
-    
-        <label><b>Password</b></label>
-        <input type = "password" #oPassword placeholder="Enter Password" id="password" required>
-    
-        <label><b>Name</b></label>
-        <input type = "text" #oName placeholder="Enter Name" id="name" required>
-        <button type = submit class="registerBtn" (click) = " registerOwner(oEmail.value,oPassword.value,oName.value); " >Submit</button>
-        
-    
-    </div>
-</form>
 
-<form id = "register_truck">
-    <div class = "container">
-        <h1>Register Your Food Truck</h1>
-        <p>Please fill out this form</p>
-        <hr>
-        <label><b>Food Truck name</b></label>
-        <input type = "text" #tName placeholder="Enter Food Truck Name" id="foodTruckName" required>
-       
-            <!--(click)= "registerTruck(tName.value);"-->
-        <hr>
-        <button type = submit class="registerBtn" (click) = "registerTruck(tName.value , oEmail.value); " >Register</button>
-    </div>
+  </div>
 </form>
