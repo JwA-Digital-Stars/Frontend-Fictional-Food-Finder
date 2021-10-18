@@ -16,16 +16,10 @@
             
         </tr>
 
-        <tr>
-            <td><a routerLink="/detail">Test Truck</a></td>
-            <td><button>Add to Favorites</button></td> 
-            
-            
-        </tr>
         <!--Iterating through all trucks-->
         <tr *ngFor = "let truck of trucks" >
            
-            <td><a routerLink="/detail">{{truck.name}}</a></td> 
+            <td><a routerLink="/detail/{{truck.name}}">{{truck.name}}</a></td> 
             <td><button (click) = "favoriteToggle()">Add to Favorites</button></td>        
         </tr>
     </table>

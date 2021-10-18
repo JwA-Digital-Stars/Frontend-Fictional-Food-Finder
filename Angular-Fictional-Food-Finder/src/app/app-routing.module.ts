@@ -9,6 +9,7 @@ import { RegisterCustomerComponent } from './components/register-customer/regist
 import { RegisterOwnerComponent } from './components/register-owner/register-owner.component';
 import { UpdateMenuComponent } from './components/update-menu/update-menu.component';
 import { TruckDetailsComponent } from './components/truck-details/truck-details.component';
+import { RegisterTruckComponent } from './components/register-truck/register-truck.component';
 
 
 const routes: Routes = [
@@ -32,7 +33,13 @@ const routes: Routes = [
   //owner update food truck menu
   {path: 'UpdateMenu', component: UpdateMenuComponent},
   //detail for trucks *needs the detail/:truckname added
-  {path: 'detail', component: TruckDetailsComponent}
+  {path: 'detail/:name', component: TruckDetailsComponent},
+  //owner specific dashboard
+  {path: 'ownerDashboard/:email', component: DashboardOwnerComponent},
+  //customer specific dashboard
+  {path: 'customerDashboard/:email', component: DashboardComponent},
+  //path for register
+  {path: 'registertruck', component: RegisterTruckComponent}
 
 
 ];
